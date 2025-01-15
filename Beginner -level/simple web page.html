@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid red;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            color: green;
+        }
+        .div1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            width: 800px;
+            padding: 30px;
+            border: 3px solid black;
+            margin: 20px 0;
+        }
+        .in {
+            display: inline-block;
+        }
+        .in1 {
+            border-radius: 45%;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML List</h1>
+    <ul>
+        <li>This is an unordered list.</li>
+        <li>HTML has 6 heading tags.</li>
+        <li>Paragraphs are created using the <code>&lt;p&gt;</code> tag.</li>
+        <li>We can create a responsive web page using HTML.</li>
+    </ul>
+    
+    <ol>
+        <li>This is an ordered list.</li>
+        <li>Observe the difference between ordered and unordered lists.</li>
+    </ol>
+
+    <hr>
+
+    <h2>Linking to Google</h2>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <hr>
+
+    <h3>Inserting an Image</h3>
+    <img src="images/Resume preview" alt="Resume Preview" height="300">
+
+    <hr>
+
+    <h2>Creating a Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prakash</td>
+                <td>19</td>
+                <td>VTP</td>
+            </tr>
+            <tr>
+                <td>Surya</td>
+                <td>20</td>
+                <td>VTP</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Practicing with Div Elements</h2>
+    <div class="div1">
+        <div class="in" style="width: 100px; height: 100px; background-color: crimson; transform: rotate(45deg);"></div>
+        <div class="in" style="width: 80px; height: 100px; border-radius: 50%; background-color: blue;"></div>
+        <div class="in1"></div>
+        <div class="in" style="width: 100px; height: 50px; background-color: violet; border-radius: 100px 100px 0 0;"></div>
+    </div>
+</body>
+</html>
